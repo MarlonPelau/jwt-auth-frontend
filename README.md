@@ -1,15 +1,15 @@
 # JWT Auth Frontend
-# PROJECT START UP CHALLENGE 3 - FULLSTACK w/ Authentication & User Login
-***TeaWhips*** by CODE 418 🫖
+# PROJECT START UP SOLO CHALLENGE - FULLSTACK w/ Authentication & User Login
+***Streamism*** by Marlon Regis 🧑🏾‍💻 
 
-<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1711048891/TeaWhips3_c6mmec.avif" alt="TeaWhips!" width="300" height="300">
+<img src="?" alt="Streamism!" width="300" height="300">
 
 
 Welcome to our quirky world of teapots disguised as vehicles! Our "Code 418" team of `Anita, Brenda, Kenneth & Marlon`, created a Full Stack application, `*TeaWhips*` using ReactJS, ExpressJS, PostgresSQL, pg-promise. `TeaWhips` is our unique platform specializing in teapots shaped like vehicles. A fun fact: none of us even had a clue that this sort of thing exists. The idea was an organic one -- Kenneth has a love for cars, and was drumming-up an app idea based around an e-commerce site for that, but randomly Anita for some wild reason, interjected with an idea about teapots? You can't make this stuff up! So, all at once, we decided to Google search a combination between cars and teapots, and lo' and behold, there was such a thing as car-teapots, and thriving, vibrant all over Etsy! So there you have it, our app idea was born.
 
 The app allows users to register, browse, review and click around to enjoy a unique collection of whimsical teapot designs. Users can explore various vehicle-inspired teapots and infuse their tea time with a touch of novelty and personality. The app caters to tea/teapot enthusiasts who appreciate creativity and novelty in their tea accessories, offering a curated selection of teapots designed to delight and inspire.
 
-In addition, the four of us also worked closely together, practicing and using the following below **Project Tools & Skills**:
+In addition, working/collaborating, practicing and using the following below **Project Tools & Skills**:
 - React Hooks
 - React Router 6.2.1
 - Forms
@@ -31,6 +31,7 @@ In addition, the four of us also worked closely together, practicing and using t
 - CSS Grid 
 - Render.com backend deployment
 - Netlify.com frontend deployment
+- DATABASE (ElephantSQL & Postico)
 - Self learning
 - ChatGPT
 - AI
@@ -51,9 +52,9 @@ In addition, the four of us also worked closely together, practicing and using t
 ## Installation
 To run the app locally, follow these steps:
 
-1. Clone the repository: git clone https://github.com/AnitaOwen/auth-react-login-project-frontend.git
+1. Clone the repository: git clone 
 
-2. Navigate to the project directory: cd `auth-react-login-project-frontend`
+2. Navigate to the project directory: cd `https://github.com/MarlonPelau/jwt-auth-frontend.git`
 
 3. Install dependencies: npm i
 
@@ -123,20 +124,37 @@ You are welcome to contribute to my 'Streamsim Project', follow these simple ste
 
 ## USER STORIES
 
-1. 
+1. The app should be free to download, informative and be available on any mobile device.
+
+2. As a user, the search button must directly lead me to platforms that correlate to my filtered request.
+
+3. As a user, signing up to log-in, must be clearly advantageous than anyone who doesn't.
+
+4. As a repeat user, at least two platforms that help me discovery new music, should be included.
+
+5. As an avid user, the app needs to point me in the right direction for platforms that build community.
+
+6. As a user, I want a platform highlighting upcoming concerts/shows before they're in my area.
+
+7. As a user, I want to a platform that alerts me on new LP/single releases.
+
+8. As a user, I want to be able to also search for different platforms based on varying musical needs.
+
+9. As a user, there must be a diverse range of platform options to peruse through!
+
+
+
 
 ## User Personas:
 
 <img src="" alt="Henri!" width="300" height="300">
 
-
-1. Meet **Henri**, She adores cars and loves sipping tea while admiring her model car collection. Seeking to add novelty to her tea time, she discovers the "TeaWhips" app. She downloads it, uncovering a new world of vehicle-themed teapots. Excited, she begins exploring, eager to find the perfect addition to her collection!
+1. Meet `Henri`, **Henri** loves to discover new music because not only is he an avid music lover of many genres, he commutes by train or sometimes by car, between his home in the suburbs and his job in the city, quite a distance away. To make the time go by faster, he enjoys seamless music streaming on his favorite app platforms, and is always open to different formats, as long as it flows with less talk and more and more new music. He's a creature of habit, so usually sticks to just two music platforms. My app would be perfect for him see his other options to explore, but at the same time, know exactly what he's getting into.
 
 
 <img src="" alt="Luanne!" width="300" height="300">
 
-
-2. Very different to , is **Luanne**. He's an artist with a short attention span, and also spends less time on apps because of his stance on limiting technology, or too much if it, in his life. Our TeaWhips has to have an appeal to lure him to not log off, and hopefully purchase one or two teapots, or at least grab his attention enough, to revisit in the near future to add to his wild art collection.
+2. 2. Meet `Luanne` -- **Luanne** doesn't really know what she wants, music-wise. But she's very sure on what she does NOT want to hear included in her gym workouts, walks in the park and on a weekend cooking or running errands. In other words, she's always on-the-go! And it's any genre or playlist of music that includes misogyny of women, vulgar language, or anything too aggressive! She doesn't mind very politically forward, liberal and progressive music, or podcasts though. She is also looking forward to 4/20 for obvious reasons, so her listening experience by the time that day hits, needs to be on-point.
 
 
 ## ABOUT ME!
