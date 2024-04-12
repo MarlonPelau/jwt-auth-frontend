@@ -2,7 +2,7 @@
 # PROJECT START UP SOLO CHALLENGE - FULLSTACK w/ Authentication & User Login
 ***Streamism*** by Marlon Regis 🧑🏾‍💻 
 
-<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="Streamism!" width="300" height="300">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="Streamism!" width="700" height="400">
 
 
 Welcome to our quirky world of teapots disguised as vehicles! Our "Code 418" team of `Anita, Brenda, Kenneth & Marlon`, created a Full Stack application, `*TeaWhips*` using ReactJS, ExpressJS, PostgresSQL, pg-promise. `TeaWhips` is our unique platform specializing in teapots shaped like vehicles. A fun fact: none of us even had a clue that this sort of thing exists. The idea was an organic one -- Kenneth has a love for cars, and was drumming-up an app idea based around an e-commerce site for that, but randomly Anita for some wild reason, interjected with an idea about teapots? You can't make this stuff up! So, all at once, we decided to Google search a combination between cars and teapots, and lo' and behold, there was such a thing as car-teapots, and thriving, vibrant all over Etsy! So there you have it, our app idea was born.
@@ -93,7 +93,7 @@ We used A LOT (12!) of Routes for the following files below:
 ## Bonus Items
 'Stream' Goals!
 
-<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Grayscale/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="stream goals!" width="300" height="300">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Grayscale/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="stream goals!" width="600" height="400">
 
 1. Opted-in to use the User Login to our `TeaWhips` application, using the already prepared User Auth login front and backend starters.
 
@@ -152,7 +152,7 @@ You are welcome to contribute to my 'Streamsim Project', follow these simple ste
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1712884349/Luanne_bxfrvw.avif" alt="Luanne!" width="300" height="300">
 
-2. 2. Meet `Luanne` -- **Luanne** doesn't really know what she wants, music-wise. But she's very sure on what she does NOT want to hear included in her gym workouts, walks in the park and on a weekend cooking or running errands. In other words, she's always on-the-go! And it's any genre or playlist of music that includes misogyny of women, vulgar language, or anything too aggressive! She doesn't mind very politically forward, liberal and progressive music, or podcasts though. She is also looking forward to 4/20 for obvious reasons, so her listening experience by the time that day hits, needs to be on-point.
+2. Meet `Luanne` -- **Luanne** doesn't really know what she wants, music-wise. But she's very sure on what she does NOT want to hear included in her gym workouts, walks in the park and on a weekend cooking or running errands. In other words, she's always on-the-go! And it's any genre or playlist of music that includes misogyny of women, vulgar language, or anything too aggressive! She doesn't mind very politically forward, liberal and progressive music, or podcasts though. She is also looking forward to 4/20 for obvious reasons, so her listening experience by the time that day hits, needs to be on-point.
 
 
 ## ABOUT ME!
@@ -161,7 +161,7 @@ You are welcome to contribute to my 'Streamsim Project', follow these simple ste
   <b>Marlon Regis:</b> <a href="https://github.com/MarlonPelau">GitHub</a>
 </p>
 <p align="center">
-  <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1712883521/pelau_yfhd9e.jpg" alt="Marlon!" width="300" height="300">
+  <img src="" alt="Marlon!" width="300" height="300">
 
 At times, buried in code, with large chunks of time during class and at night, my Trello board `To-Do, Doing, Done` became a necessity to keep focus on tasks and realistic goals. It detailed lists and acted as a key reminder throughout each day of where I'm at in my progress.
 
@@ -182,9 +182,9 @@ WIREFRAMES (desktop and mobile) further below here.
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1712881398/Screenshot_2024-04-11_at_8.23.01_PM_ibld7u.png" alt="About MR page" width="400" height="400">
 
-<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1712881398/Screenshot_2024-04-11_at_8.23.01_PM_ibld7u.png" alt="Review Form page" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1712885653/Screenshot_2024-04-11_at_8.27.56_PM_rmk3t4.png" alt="Review Form page" width="900" height="300">
 
-<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1712882253/Screenshot_2024-04-11_at_8.37.03_PM_qsajas.png" alt="Mobile - redirecting to different Spotify URL" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1712882253/Screenshot_2024-04-11_at_8.37.03_PM_qsajas.png" alt="Mobile - redirecting to different Spotify URL" width="400" height="800">
 
 Streamism (preliminary screenshots of data, different pages, etc.)
 
