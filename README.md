@@ -161,7 +161,7 @@ You are welcome to contribute to my 'Streamsim Project', follow these simple ste
   <b>Marlon Regis:</b> <a href="https://github.com/MarlonPelau">GitHub</a>
 </p>
 <p align="center">
-  <img src="" alt="Marlon!" width="300" height="300">
+  <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Profile/v1712883521/pelau_yfhd9e.png" alt="Marlon!" width="300" height="300">
 
 At times, buried in code, with large chunks of time during class and at night, my Trello board `To-Do, Doing, Done` became a necessity to keep focus on tasks and realistic goals. It detailed lists and acted as a key reminder throughout each day of where I'm at in my progress.
 
