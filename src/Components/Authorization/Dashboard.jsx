@@ -19,7 +19,7 @@ const Dashboard = ({ handleLogout }) => {
       <Link to={'/platforms'}>
         <h3>Click to view Streamism</h3>
       </Link>
-      <img src={"?"} alt="streamers-img/gif" />
+      <img src={"https://res.cloudinary.com/dgifdj6nx/image/upload/v1713190031/Streamism-streamingif_nbnvko.gif"} alt="streamers-gif" />
       {streamer && (
         <div>
           <h2>Dashboard Component</h2>

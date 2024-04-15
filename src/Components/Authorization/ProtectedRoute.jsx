@@ -6,7 +6,7 @@ const URL = import.meta.env.VITE_BASE_URL;
 
 export const useAuth = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [user, setUser] = useState();
+  const [streamer, setStreamer] = useState();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
@@ -21,15 +21,15 @@ export const useAuth = () => {
           },
         });
         if (response.ok) {
-          const { isAuthenticated, user } = await response.json();
+          const { isAuthenticated, streamer } = await response.json();
 
           setIsAuthenticated(isAuthenticated);
-          setUser(user);
+          setStreamer(streamer);
           setIsLoading(false);
         } else {
           setIsAuthenticated(isAuthenticated);
           setIsLoading(false);
-          setUser(null);
+          setStreamer(null);
         }
       } catch (error) {
         console.error("Error checking authentication:", error);
@@ -41,11 +41,11 @@ export const useAuth = () => {
     checkAuth();
   }, []);
 
-  return { isAuthenticated, isLoading, user };
+  return { isAuthenticated, isLoading, streamer };
 };
 
 const ProtectedRoute = () => {
-  const { isAuthenticated, isLoading, user } = useAuth();
+  const { isAuthenticated, isLoading, streamer } = useAuth();
   if (isLoading) {
     return (
       <div>
@@ -59,7 +59,7 @@ const ProtectedRoute = () => {
     return <Navigate to="/login" replace />;
   }
 
-  return <Outlet context={user} />; // If authenticated, continue rendering the component the route is pointing to
+  return <Outlet context={streamer} />; // If authenticated, continue rendering the component the route is pointing to
 };
 
 export default ProtectedRoute;

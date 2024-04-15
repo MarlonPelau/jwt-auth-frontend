@@ -1,25 +1,25 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-
+import "./Login.css";
 const URL = import.meta.env.VITE_BASE_URL;
 
 const Login = ({ setToggleLogin }) => {
-  const [user, setUser] = useState({ username: "", password: "" });
+  const [streamer, setStreamer] = useState({ username: "", password: "" });
   const navigate = useNavigate();
 
   function handleChange(event) {
-    setUser({ ...user, [event.target.id]: event.target.value });
+    setStreamer({ ...streamer, [event.target.id]: event.target.value });
   }
   // This function is being used in two places. It can be extracted to a helpers.js file
 
-  async function postFetch(user) {
+  async function postFetch(streamer) {
     const options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
 
-      body: JSON.stringify(user),
+      body: JSON.stringify(streamer),
     };
 
     try {
@@ -28,7 +28,7 @@ const Login = ({ setToggleLogin }) => {
 
       if (!res.ok) {
         alert("Login failed");
-        setUser({ username: "", password: "" });
+        setStreamer({ username: "", password: "" });
         throw new Error("Registration failed");
       }
 
@@ -37,7 +37,7 @@ const Login = ({ setToggleLogin }) => {
         await setToggleLogin(true);
         navigate("/dashboard");
       } else {
-        console.log("JWT Login Failed");
+        console.log("Streamism Login Failed");
       }
     } catch (error) {
       console.error("Error during registration:", error);
@@ -47,66 +47,62 @@ const Login = ({ setToggleLogin }) => {
   // Login Function
   async function handleSubmit(e) {
     e.preventDefault();
-    if (!user.username || !user.password) {
+    if (!streamer.username || !streamer.password) {
       alert("You must enter a username and password");
       return;
     }
-    postFetch(user);
+    postFetch(streamer);
   }
 
   //Demo User Login Function
   async function handleDemoSignIn(e) {
     e.preventDefault();
-    const user = { username: "demo", password: "password" };
-    postFetch(user);
+    const streamer = { username: "demo", password: "password" };
+    postFetch(streamer);
   }
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1>Login Component</h1>
-      <br />
-      <h2>
-        Use the DemoUser button to login and save time during your presentation
-      </h2>
+    // <div style={{ textAlign: "center" }}>
+    <div className="login-container">
       <button onClick={handleDemoSignIn}>Demo User</button>
-      <br />
-      <br />
-      <br />
-
-      <h3> Remove the 'br' tags and these instructions if you use this code</h3>
-
-      <br />
-      <br />
-      <br />
-      <h3>Below is the regular login form which should be functional</h3>
+      <h3>Login</h3>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="username">
-          <input
-            id="username"
-            value={user.username}
-            type="text"
-            placeholder="username"
-            autoComplete="username"
-            onChange={handleChange}
-          />
-        </label>
-
-        <label htmlFor="password">
-          <input
-            id="password"
-            value={user.password}
-            type="password"
-            placeholder="password"
-            onChange={handleChange}
-            autoComplete="current-password"
-          />
-        </label>
-        <button>Submit</button>
+        <section>
+          <label htmlFor="username">
+            <input
+              id="username"
+              value={streamer.username}
+              type="text"
+              placeholder="username"
+              autoComplete="username"
+              onChange={handleChange}
+            />
+          </label>
+        </section>
+        <section>
+          <label htmlFor="password">
+            <input
+              id="password"
+              value={streamer.password}
+              type="password"
+              placeholder="password"
+              onChange={handleChange}
+              autoComplete="current-password"
+            />
+          </label>
+        </section>
+        <section className="button-section">
+          <button>Submit</button>
+          <Link to={"/platforms"}>
+            <button>Back</button>
+          </Link>
+        </section>
       </form>
       <p>
         No Account? <Link to="/register">Register</Link>
       </p>
     </div>
+    // </div>
   );
 };
 

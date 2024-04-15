@@ -5,10 +5,10 @@ const URL = import.meta.env.VITE_BASE_URL;
 
 const Register = ({ setToggleLogin }) => {
   const navigate = useNavigate();
-  const [user, setUser] = useState({ username: "", password: "", email: "" });
+  const [streamer, setStreamer] = useState({ username: "", password: "", email: "" });
 
   function handleChange(event) {
-    setUser({ ...user, [event.target.id]: event.target.value });
+    setStreamer({ ...streamer, [event.target.id]: event.target.value });
   }
 
   async function handleSubmit(e) {
@@ -20,7 +20,7 @@ const Register = ({ setToggleLogin }) => {
         "Content-Type": "application/json",
       },
 
-      body: JSON.stringify(user),
+      body: JSON.stringify(streamer),
     };
 
     try {
@@ -45,49 +45,58 @@ const Register = ({ setToggleLogin }) => {
   // USE THIS FORM TO BUILD OUT YOUR FORM PROPERLY BY ADDING LABELS AND INPUTS AS WELL AS WHATEVER CSS FRAMEWORK YOU MAY USE OR VANILLA CSS. THIS IS JUST A BOILERPLATE CODE
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <p>
-        Already have an account? <Link to="/login">Login</Link>
-      </p>
-      <h3>Register</h3>
-      <form onSubmit={handleSubmit}>
+    <div className="register-container">
+    <p style={{ fontSize: "20px" }}>
+      Already have an account? <Link to="/login">Login</Link>
+    </p>
+    <h3>Register</h3>
+    <form onSubmit={handleSubmit}>
+      <section>
         <label htmlFor="username">
           <input
             id="username"
-            value={user.username}
+            value={streamer.username}
             type="text"
             placeholder="username"
             onChange={handleChange}
             autoComplete="username"
           />
         </label>
-
+      </section>
+      <section>
         <label htmlFor="email">
           <input
             id="email"
-            value={user.email}
+            value={streamer.email}
             type="email"
             placeholder="email"
             onChange={handleChange}
             autoComplete="email"
           />
         </label>
-
+      </section>
+      <section>
         <label htmlFor="password">
           <input
             id="password"
-            value={user.password}
+            value={streamer.password}
             type="password"
             placeholder="password"
             onChange={handleChange}
             autoComplete="current-password"
           />
         </label>
-
+      </section>
+      <section className="register-button-section">
         <button>Submit</button>
-      </form>
-    </div>
-  );
+        <Link to={"/platforms"}>
+          <button>Back</button>
+        </Link>
+      </section>
+    </form>
+  </div>
+);
 };
 
 export default Register;
+
