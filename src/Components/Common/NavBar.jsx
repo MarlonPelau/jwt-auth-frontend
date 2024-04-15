@@ -1,56 +1,60 @@
 import { useEffect, useState } from "react";
-
+import "./NavBar.css";
 import { Link } from "react-router-dom";
 
 const URL = import.meta.env.VITE_BASE_URL;
 
 const NavBar = ({ toggleLogin, handleLogout }) => {
-  const [user, setUser] = useState(null);
+  const [streamer, setStreamer] = useState(null);
 
   useEffect(() => {
-    if (!toggleLogin) setUser(null);
+    if (!toggleLogin) setStreamer(null);
 
     if (toggleLogin) {
       const token = localStorage.getItem("token");
       if (token) {
-        fetch(`${URL}/api/auth/user`, {
+        fetch(`${URL}/api/auth/streamer`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         })
           .then((response) => response.json())
           .then((data) => {
-            setUser(data.user);
+            setStreamer(data.streamer);
           })
-          .catch((error) => console.error("Error fetching user:", error));
+          .catch((error) => console.error("Error fetching streamer:", error));
       }
     }
   }, [toggleLogin]);
 
   return (
     <div className="navbar-container">
-      <h1>Navbar Component</h1>
-      <h2>
-        <Link style={{ textDecoration: "none" }} to="/">
-          Your image or Logo (click here to go to Landing Page)
-        </Link>
-      </h2>
-
+    <Link to={"/platforms"}>
+      <h1>Streamism</h1>
+    </Link>
+    <article>
+      <Link to={"/about"}>
+        <p className="p1">About</p>
+      </Link>
       {!toggleLogin ? (
-        <Link to={"/login"}>
-          <span>Login</span>
+        <Link to={"/login"} style={{ textDecoration: "none", color: "black" }}>
+          <p className="p2">Login</p>
         </Link>
       ) : (
         <div>
-          {user && <span>Hello, {user.username.toUpperCase()}? | </span>}
-          <Link onClick={handleLogout}>
-            <span>Logout</span>
+          {streamer && (
+            <p className="p2">Hello, {streamer.username.toUpperCase()}? | </p>
+          )}
+          <Link onClick={handleLogout} style={{ textDecoration: "none", color: "black" }}>
+            <p className="p2">Logout</p>
           </Link>
         </div>
       )}
-      <hr />
-    </div>
-  );
+    </article>
+  </div>
+);
 };
+      
+  
 
 export default NavBar;

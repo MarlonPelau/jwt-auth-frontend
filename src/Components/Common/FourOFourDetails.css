@@ -1,0 +1,27 @@
+.fof-details h1 {
+    color: black;
+  }
+  
+  .fof-details {
+    margin: 0 auto;
+    text-align: center;
+    place-items: center;
+    margin-top: 10%;
+  }
+  
+  .fof-details img {
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+  }
+  
+  .stream-container {
+    position: absolute;
+    top: 36%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    animation-delay: 3s;
+    z-index: 1;
+  }
+  
