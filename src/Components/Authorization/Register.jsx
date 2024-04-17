@@ -25,6 +25,7 @@ const Register = ({ setToggleLogin }) => {
 
     try {
       const res = await fetch(`${URL}/api/auth/register`, options);
+      console.log(res)
 
       if (!res.ok) throw new Error("Registration failed");
       const data = await res.json();

@@ -9,19 +9,23 @@
   .platform-card {
     display: grid;
     grid-template-columns: 1 fr;
-    border: 2px solid palegoldenrod;
-    border-radius: 20px;
+    /* border: 2px solid palegoldenrod; */
+    /* border-radius: 20px; */
     gap: 10px;
     padding: 10px;
     place-items: center;
-    background-color: white;
+    color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
   }
   
   .platform-card:hover {
     transform: scale(1.05);
-    border: 2px solid maroon;
+    /* border: 2px solid maroon; */
+  }
+
+  .platform-card > img {
+    width: 80%;
   }
   
   .show-container {
@@ -87,6 +91,7 @@
   h2 {
     grid-row: 1;
     grid-column: 1/4;
+    color: rgb(161, 121, 231);
   }
   
   .search-input {
@@ -94,6 +99,7 @@
     margin-top: 20px;
     font-size: 25px;
     place-items: center;
+    color: rgb(161, 121, 231);
   }
   
   .input-box {

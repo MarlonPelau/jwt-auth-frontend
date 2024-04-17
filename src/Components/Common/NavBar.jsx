@@ -43,7 +43,7 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
       ) : (
         <div>
           {streamer && (
-            <p className="p2">Hello, {streamer.username.toUpperCase()}? | </p>
+            <p className="p2">{`Hello, ${streamer.username.toUpperCase()}`}</p>
           )}
           <Link onClick={handleLogout} style={{ textDecoration: "none", color: "black" }}>
             <p className="p2">Logout</p>

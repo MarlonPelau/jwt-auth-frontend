@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
 h1 {
-  font-family: "Lobster Two";
+  font-family: fantasy;
   font-size: 50px;
 }
 
@@ -10,7 +10,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 20px 30px;
-  background-color: maroon;
+  background-color: rgb(161, 121, 231);
 }
 
 .navbar-container article {
@@ -30,5 +30,5 @@ h1 {
 .p1,
 .p2,
 h1 {
-  color: white;
+  color: lavenderblush;
 }

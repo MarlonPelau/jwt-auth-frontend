@@ -1,5 +1,5 @@
 import React from "react";
-import Platforms from "../Components/Platforms/Platforms.jsx"
+import Platforms from "../Components/Platforms/Platforms.jsx";
 
 const Index = () => {
   return (

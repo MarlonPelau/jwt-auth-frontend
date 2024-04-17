@@ -19,7 +19,7 @@ const AboutMe = () => {
           </a>
           <p className="fun-fact">
             {" "}
-            <b>Fun Fact:</b> "I betcha I've got more nicknames, aliases and official 'other' names than you can count using your fingers on both hands?"
+            <b>Fun Fact:</b> "I got more nicknames & aliases than you can count on both hands!" 🤷🏾‍♂️
           </p>
         </li>
       </ul>
