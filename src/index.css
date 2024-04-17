@@ -19,14 +19,14 @@ button {
 
 
 button:hover {
-  background-color: maroon;
+  background-color: rgb(47, 3, 100);
   cursor: pointer;
   color: white;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(161, 121, 231);
 }
 
 a:hover {

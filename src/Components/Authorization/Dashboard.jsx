@@ -9,7 +9,7 @@ const Dashboard = ({ handleLogout }) => {
   return (
     <div className='register-container'>
       <h2>
-        Welcome, {streamer && streamer.username && (
+        Hi {streamer && streamer.username && (
           <>
             {streamer.username[0].toUpperCase()}
             {streamer.username.slice(1).toLowerCase()}
@@ -17,16 +17,16 @@ const Dashboard = ({ handleLogout }) => {
         )}
       </h2>
       <Link to={'/platforms'}>
-        <h3>Click to view Streamism</h3>
+        <h3>Click to View Streamism!</h3>
       </Link>
       <img src={"https://res.cloudinary.com/dgifdj6nx/image/upload/v1713190031/Streamism-streamingif_nbnvko.gif"} alt="streamers-gif" />
       {streamer && (
         <div>
-          <h2>Dashboard Component</h2>
-          <h1>
-            Welcome, {streamer.username[0].toUpperCase()}
+          <h2>🕺🏽💃🏽</h2>
+          {/* <h1>
+            You're the best {streamer.username[0].toUpperCase()}
             {streamer.username.slice(1).toLowerCase()}
-          </h1>
+          </h1> */}
           <button onClick={handleLogout}>Logout</button>
         </div>
       )}

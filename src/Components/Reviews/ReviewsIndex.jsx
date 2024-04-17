@@ -32,10 +32,10 @@ const ReviewsIndex = ({ platform_id, reviews, setReviews }) => {
 
   return (
     <section className="reviews-container">
-      <h2>Reviews</h2>
+      <h2>Reviews?</h2>
       {reviews.length === 0 ? (
         <Link to={`/platforms/${platform_id}/new`} style={{ margin: "20px" }}>
-          Be my guest, add a review
+          Be my guest, add a review!
         </Link>
       ) : (
         sortByDate(reviews).map((review) => (
