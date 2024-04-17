@@ -18,10 +18,10 @@ function App() {
   const navigate = useNavigate();
   const [reviews, setReviews] = useState([]);
   const [toggleLogin, setToggleLogin] = useState(false);
-
+  const [loggedStreamer, setLoggedStreamer] = useState("");
   async function handleLogout() {
     localStorage.removeItem("token");
-
+    setLoggedStreamer("");
     await setToggleLogin(false);
 
     navigate("/login");
@@ -39,7 +39,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route
           path="/login"
-          element={<Login setToggleLogin={setToggleLogin} />}
+          element={<Login setToggleLogin={setToggleLogin} setLoggedStreamer={setLoggedStreamer} />}
         />
         <Route
           path="/register"
@@ -49,7 +49,7 @@ function App() {
         <Route
           exact
           path="/platforms/:platform_id"
-          element={<Show reviews={reviews} setReviews={setReviews} />}
+          element={<Show reviews={reviews} setReviews={setReviews} loggedStreamer={loggedStreamer} />}
         />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<FourOFour />} />

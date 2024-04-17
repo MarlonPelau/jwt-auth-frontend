@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 const URL = import.meta.env.VITE_BASE_URL;
 
-const Login = ({ setToggleLogin }) => {
+const Login = ({ setToggleLogin, setLoggedStreamer }) => {
   const [streamer, setStreamer] = useState({ username: "", password: "" });
   const navigate = useNavigate();
 
@@ -25,7 +25,8 @@ const Login = ({ setToggleLogin }) => {
     try {
       const res = await fetch(`${URL}/api/auth/login`, options);
       const data = await res.json();
-
+      console.log(data.streamer.username);
+      setLoggedStreamer(data.streamer.username)
       if (!res.ok) {
         alert("Login failed");
         setStreamer({ username: "", password: "" });

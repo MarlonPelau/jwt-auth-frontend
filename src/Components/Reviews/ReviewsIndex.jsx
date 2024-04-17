@@ -1,10 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Review from "./Review";
 
 const URL = import.meta.env.VITE_BASE_URL;
 
-const ReviewsIndex = ({ platform_id, reviews, setReviews }) => {
+const ReviewsIndex = ({ platform_id, reviews, setReviews, loggedStreamer }) => {
+  const [trigger, setTrigger] = useState(false);
   const formatDate = (review) => {
     let date = review.updated_at ? review.updated_at : review.created_at;
     return date.split(`-`).map((elem) => +elem);
@@ -28,7 +29,7 @@ const ReviewsIndex = ({ platform_id, reviews, setReviews }) => {
     })
       .then((res) => res.json())
       .then((data) => setReviews(data.allReviews));
-  }, [platform_id]);
+  }, [platform_id, trigger]);
 
   return (
     <section className="reviews-container">
@@ -43,6 +44,9 @@ const ReviewsIndex = ({ platform_id, reviews, setReviews }) => {
             key={review.id}
             review={review}
             reviews={reviews}
+            loggedStreamer={loggedStreamer}
+            setTrigger={setTrigger}
+            trigger={trigger}
             setReviews={setReviews}
           />
         ))

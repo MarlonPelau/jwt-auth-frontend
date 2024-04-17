@@ -5,7 +5,7 @@ import "./Platforms.css";
 
 const URL = import.meta.env.VITE_BASE_URL;
 
-const PlatformDetails = ({ reviews, setReviews }) => {
+const PlatformDetails = ({ reviews, setReviews, loggedStreamer }) => {
   const [platform, setPlatform] = useState();
 
   const { platform_id } = useParams();
@@ -55,6 +55,7 @@ const PlatformDetails = ({ reviews, setReviews }) => {
       <ReviewsIndex
         platform_id={platform_id}
         reviews={reviews}
+        loggedStreamer={loggedStreamer}
         setReviews={setReviews}
       />
     </div>

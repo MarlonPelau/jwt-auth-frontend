@@ -9,8 +9,10 @@ import {
   
   const URL = import.meta.env.VITE_BASE_URL;
   
-  const Review = ({ review, reviews, setReviews }) => {
+  const Review = ({ review, reviews, setReviews, loggedStreamer, setTrigger, trigger }) => {
     const streamer = useAuth();
+    
+  
     // const [username, setUserName] = useState("");
     // const [loading, setLoading] = useState(true);
     const { platform_id } = useParams();
@@ -45,6 +47,8 @@ import {
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
+      } else {
+        setTrigger(!trigger)
       }
       // Handle successful deletion or any other action
     })
@@ -63,7 +67,8 @@ import {
           .catch((error) => console.error(error));
       }
     };
-  
+    // console.log("loggedStreamer", loggedStreamer)
+    // console.log("review.username", review.username)
     return (
       <div className="review-card">
         <h3>Username: {review.username}</h3>
@@ -78,7 +83,7 @@ import {
   
         <p>{review.content}</p>
   
-        {streamer.isAuthenticated && streamer.streamer.id === review.streamer_id && (
+        {loggedStreamer === review.username && (
           <div className="center-grid">
             <Link to={`/platforms/${platform_id}/edit/${review.id}`}>
               <button
