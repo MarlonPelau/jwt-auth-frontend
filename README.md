@@ -1,13 +1,13 @@
-# JWT Auth Frontend
-# PROJECT START UP SOLO CHALLENGE - FULLSTACK w/ Authentication & User Login
-***Streamism*** by Marlon Regis 🧑🏾‍💻 
+## JWT Auth Frontend
+# PROJECT START UP SOLO CHALLENGE - FULLSTACK 
+## (w/ Authentication & User Login)
 
-<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="Streamism!" width="700" height="400">
+**Streamism** by Marlon Regis 🧑🏾‍💻 
 
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient fade/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="Streamism!" width="800" height="400">
 
-Welcome to our quirky world of teapots disguised as vehicles! Our "Code 418" team of `Anita, Brenda, Kenneth & Marlon`, created a Full Stack application, `*TeaWhips*` using ReactJS, ExpressJS, PostgresSQL, pg-promise. `TeaWhips` is our unique platform specializing in teapots shaped like vehicles. A fun fact: none of us even had a clue that this sort of thing exists. The idea was an organic one -- Kenneth has a love for cars, and was drumming-up an app idea based around an e-commerce site for that, but randomly Anita for some wild reason, interjected with an idea about teapots? You can't make this stuff up! So, all at once, we decided to Google search a combination between cars and teapots, and lo' and behold, there was such a thing as car-teapots, and thriving, vibrant all over Etsy! So there you have it, our app idea was born.
-
-The app allows users to register, browse, review and click around to enjoy a unique collection of whimsical teapot designs. Users can explore various vehicle-inspired teapots and infuse their tea time with a touch of novelty and personality. The app caters to tea/teapot enthusiasts who appreciate creativity and novelty in their tea accessories, offering a curated selection of teapots designed to delight and inspire.
+There should be no surprise at this point if you know me, that my solo project idea has something to do with music, a common theme throughout.
+My `Streamism` app allows users to browse, click around, take in my expert reviews and navigate to outside music streaming sites. But, if a user deccides to register and create a login/password, one can add to the increasingly competitive ecosystem of music streaming platforms, by reviewing and rating their experiences. Even though there are nine (9) music streaming services provided on my app and they've been critiqued with clarity, vetted and give excellent direction on its uniqueness, pros or cons and specific recommendations, a `streamer` will in many cases have other platforms that they've used. Empowering the streamer to share and compare their experiences here on my app, adds richness to the community, increases an awareness of user-expertise, and embodies the 'each one, teach one' philosophy.
 
 Effort to build this application utilized the following below **Project Tools & Skills**:
 - React Hooks
@@ -43,11 +43,11 @@ Effort to build this application utilized the following below **Project Tools & 
 - Contributing
 
 ### Features
--First off, our `landing page` has an `About` link  in the `Header/Navbar` that, if clicked, connects the user to our team that built this app with brief profiles on each of us. Don't forget to see what we all look like 🫖 when you gloss over each of us!
+-My `landing page` has an `About` and a `Login` links (top right) in the `Header/Navbar` that, if clicked, connects the user to my GitHub and a lil' `fun fact` blurb about me!
 
--Immediately upon coming onto our `Landing page`, wait for it -- our boiling, vehicular teapot navigates from right-to-left of the screen. Click on this 'TeaWhip' after it makes a sudden stop at the center of the screen, then you're taken to a page to see all our bizarre, quirky and cool `TeaWhips` products.
+-Top left of the `Landing page`, ???.
 
--We have a `TeaWhip` for the many enthusiasts out there! From tracktors, to racing cars, to classic vintage old school luxuries, there's something for you. Clicking on any that you fancy, you're able to purchase, review and give 1-5 ⭐️-ratings. Afterwards, the user is even given a form with an option to edit or delete reviews on any particular `TeaWhip`.  
+-`Streamism` captures nine (9) ????.  
 
 ## Installation
 To run the app locally, follow these steps:
@@ -60,11 +60,11 @@ To run the app locally, follow these steps:
 
 4. ```npm run dev```
 
-**Access the Dashboard**: Open your web browser and go to (netlify link?) to access my `Streamism` app.
+**Access the Dashboard**: Open your web browser and go to (netlify link: ?) to access my `Streamism` app.
 
 
 ## ROUTES
-We used A LOT (12!) of Routes for the following files below:
+? (?!) Routes used for the following files below:
 
 -Index
 
@@ -95,19 +95,17 @@ We used A LOT (12!) of Routes for the following files below:
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Grayscale/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="stream goals!" width="600" height="400">
 
-1. Opted-in to use the User Login to our `TeaWhips` application, using the already prepared User Auth login front and backend starters.
+1. User Login/Password and Register. User Auth login frontend and backend starters.
 
-2. Most, if not all our images, are stored and uploaded in our `Cloudinary` account. 
+2. Most of my mages are stored and uploaded in my `Cloudinary` account. 
 
-3. Created a `Search Bar` to enable users to search data for the various product options available in our `TeaWhips` app.
+3. `Search Bar` to enable users to ???.
 
-4. `CSS Animations` for our `Landing Page` is used on our moving, vehicular `TeaWhips` logo.
+4. `CSS Animations` for my `Landing Page` is used on our moving text.
 
-5. We also have `Error Components` in our code.
+5. Included `Error Components`.
 
-6. There's also a designed `CSS 404 Page` included in our app.
-
-7. `Sorting some data` is yet another stretch goal we've accomplished.
+6. There's a `CSS 404 Page` included.
 
 ### Contributing
 Contributions: 
@@ -206,11 +204,11 @@ ERDs (tables)
 **DATABASE -  link**: 
 **Frontend deployment - my netlify.com link**: 
 
-()
+(https://github.com/MarlonPelau/jwt-auth-frontend)
 
 **Backend deployment - my render.com link**: 
 
-()
+(https://github.com/MarlonPelau/jwt-auth-backend-streamism)
 
 **ERD link**: https://dbdiagram.io/d/Streamism-661410f703593b6b617bf90d
 
