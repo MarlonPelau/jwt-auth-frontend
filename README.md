@@ -186,13 +186,13 @@ WIREFRAMES (desktop and mobile) further below here.
 
 Streamism (preliminary screenshots of data, different pages, etc.)
 
-<img src="?" alt="Landing Page" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1713367030/Screenshot_2024-04-17_at_11.13.30_AM_mbezxc.png" alt="Landing Page" width="400" height="400">
 
-<img src="?" alt="Review/Product Card" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1713367031/Screenshot_2024-04-17_at_11.14.48_AM_zi2r71.png" alt="Review/Product Card" width="400" height="400">
 
-<img src="?" alt="Login" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1713367030/Screenshot_2024-04-17_at_11.15.36_AM_psnvpi.png" alt="Login" width="400" height="400">
 
-<img src="?" alt="About" width="400" height="400">
+<img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1713367031/Screenshot_2024-04-17_at_11.14.02_AM_gik0j2.png" alt="About" width="400" height="400">
 
 ERDs (tables)
 
