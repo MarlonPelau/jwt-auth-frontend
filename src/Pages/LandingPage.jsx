@@ -3,11 +3,16 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <div style={{ textAlign: "center", marginTop: 100 }}>
-      <h1>This is Your Landing Page</h1>
+      <h1>Welcome to Streamism</h1>
 
       <h3>
-        Dashboard is a protected component. If you are not logged in and you try
-        to navigate to the component you will be sent to the Login Page. Try It!
+        <Link to="/platforms">
+          <img
+            src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1713196706/Streamism-dif_logos_kkuvqc.avif"
+            alt="Streamism Logo"
+            style={{ cursor: "pointer" }} // Set cursor to pointer to indicate it's clickable
+          />
+        </Link>
       </h3>
       <Link to="/dashboard">Dashboard</Link>
     </div>
