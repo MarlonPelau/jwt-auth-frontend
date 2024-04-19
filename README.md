@@ -27,6 +27,7 @@ Effort to build this application utilized the following below **Project Tools & 
 - Cloudinary
 - Trello Board
 - dbdiagram (ERDs)
+- wireframes (excalidraw)
 - HTML, CSS, JS
 - CSS Grid 
 - Render.com backend deployment
@@ -43,11 +44,9 @@ Effort to build this application utilized the following below **Project Tools & 
 - Contributing
 
 ### Features
--My `landing page` has an `About` and a `Login` links (top right) in the `Header/Navbar` that, if clicked, connects the user to my GitHub and a lil' `fun fact` blurb about me!
+-My `landing page` has an `About` and a `Login` links (top right) in the `Header/Navbar` that, if clicked, connects the user to my GitHub and a lil' `fun fact` blurb about me.
 
--Top left of the `Landing page`, ???.
-
--`Streamism` captures nine (9) ????.  
+-`Streamism` captures nine (9) music streaming platforms, where the streamer can navigate even if not logged in, though limited by not being able to add any review to the respective music streaming services. The registered streamer of course, has all the C.R.U.D. options -- to create, read, update and delete, their reviews per music streaming service.
 
 ## Installation
 To run the app locally, follow these steps:
@@ -60,11 +59,11 @@ To run the app locally, follow these steps:
 
 4. ```npm run dev```
 
-**Access the Dashboard**: Open your web browser and go to (netlify link: ?) to access my `Streamism` app.
+**Access the Dashboard**: Open your web browser and go to (netlify link: https://streamism.netlify.app) to access my `Streamism` app.
 
 
 ## ROUTES
-? (?!) Routes used for the following files below:
+12 Routes used for the following files below:
 
 -Index
 
@@ -95,9 +94,11 @@ To run the app locally, follow these steps:
 
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Grayscale/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png" alt="stream goals!" width="600" height="400">
 
-1. User Login/Password and Register. User Auth login frontend and backend starters.
+1. User Login/Password and Register. `User Auth login` frontend and backend starters.
 
 2. Most of my mages are stored and uploaded in my `Cloudinary` account. 
+
+3. Used a completely different `wireframe` diagram platform called *excalidraw*.
 
 3. `Search Bar` to enable users to ???.
 
@@ -202,11 +203,11 @@ ERDs (tables)
 ## DEPLOYMENT (& SLIDE) LINKS
 
 **DATABASE -  link**: 
-**Frontend deployment - my netlify.com link**: 
+**Frontend deployment - my netlify.com link**: https://streamism.netlify.app
 
 (https://github.com/MarlonPelau/jwt-auth-frontend)
 
-**Backend deployment - my render.com link**: 
+**Backend deployment - my render.com link**: https://jwt-auth-backend-streamism-1.onrender.com
 
 (https://github.com/MarlonPelau/jwt-auth-backend-streamism)
 
