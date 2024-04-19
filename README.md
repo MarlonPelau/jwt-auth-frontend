@@ -200,16 +200,13 @@ ERDs (tables)
 <img src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1712879394/Screenshot_2024-04-11_at_7.49.24_PM_gzocsl.png" alt="Streamism" width="400" height="400">
 
 
-## DEPLOYMENT (& SLIDE) LINKS
+# DEPLOYMENT (& SLIDE) LINKS
 
-**DATABASE -  link**: 
-**Frontend deployment - my netlify.com link**: https://streamism.netlify.app
+### Frontend Deployment: https://github.com/MarlonPelau/jwt-auth-frontend
+**my netlify.com link**: https://streamism.netlify.app
 
-(https://github.com/MarlonPelau/jwt-auth-frontend)
-
-**Backend deployment - my render.com link**: https://jwt-auth-backend-streamism-1.onrender.com
-
-(https://github.com/MarlonPelau/jwt-auth-backend-streamism)
+### Backend Deployment: https://github.com/MarlonPelau/jwt-auth-backend-streamism
+**my render.com link**: https://jwt-auth-backend-streamism-1.onrender.com
 
 **ERD link**: https://dbdiagram.io/d/Streamism-661410f703593b6b617bf90d
 
