@@ -10,7 +10,7 @@ function LandingPage() {
           <img
             src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradient%20fade/v1712885004/Screenshot_2024-04-11_at_9.22.31_PM_r13jiu.png"
             alt="Streamism Logo"
-            style={{ cursor: "pointer" }} // Set cursor to pointer to indicate it's clickable
+            style={{ maxWidth: "100%", height: "auto", cursor: "pointer" }}
           />
         </Link>
       </h3>
