@@ -8,7 +8,7 @@ function LandingPage() {
       <h3>
         <Link to="/platforms">
           <img
-            src="https://res.cloudinary.com/dgifdj6nx/image/upload/v1713196706/Streamism-dif_logos_kkuvqc.avif"
+            src="https://res.cloudinary.com/dgifdj6nx/image/upload/t_Gradientfade/v1713196706/Streamism-dif_logos_kkuvqc.avif"
             alt="Streamism Logo"
             style={{ cursor: "pointer" }} // Set cursor to pointer to indicate it's clickable
           />
